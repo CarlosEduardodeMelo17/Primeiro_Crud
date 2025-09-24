@@ -1,0 +1,47 @@
+# Passo a passo para CRUD Usuário com Java e Spring Boot
+
+1. **Configurar o projeto**
+
+   * Crie um novo projeto no Spring Initializr ([https://start.spring.io/](https://start.spring.io/))
+   * Selecione as dependências: Spring Web, Spring Data JPA, H2 Database, Lombok (opcional)
+   * Gere o projeto e importe na sua IDE favorita
+
+2. **Criar a entidade Usuário**
+
+   * Crie uma classe `Usuario` na pasta de modelos
+   * Defina atributos básicos como `id`, `nome` e `email`
+   * Anote a classe com `@Entity` e configure o `id` para ser gerado automaticamente
+
+3. **Criar o repositório**
+
+   * Crie uma interface `UsuarioRepository` que estenda `JpaRepository<Usuario, Long>`
+   * Isso fornecerá métodos CRUD prontos para uso
+
+4. **Criar o serviço**
+
+   * Crie uma classe `UsuarioService`
+   * Injete o repositório e implemente métodos para listar todos, buscar por id, criar, atualizar e deletar usuários
+   * No método de atualização, busque o usuário pelo id e atualize os campos, salvando novamente
+
+5. **Criar o controller REST**
+
+   * Crie uma classe `UsuarioController` anotada com `@RestController` e `@RequestMapping("/usuarios")`
+   * Implemente endpoints:
+
+     * GET `/usuarios` para listar todos os usuários
+     * GET `/usuarios/{id}` para buscar usuário por id
+     * POST `/usuarios` para criar um novo usuário
+     * PUT `/usuarios/{id}` para atualizar um usuário existente
+     * DELETE `/usuarios/{id}` para deletar um usuário
+
+6. **Configurar o banco de dados (H2 para testes)**
+
+   * No arquivo `application.properties` configure a conexão com o banco H2 em memória
+   * Habilite o console do H2 para facilitar testes via navegador
+
+7. **Executar a aplicação**
+
+   * Rode a aplicação Spring Boot
+   * Teste os endpoints usando Postman, Insomnia, ou curl
+
+
