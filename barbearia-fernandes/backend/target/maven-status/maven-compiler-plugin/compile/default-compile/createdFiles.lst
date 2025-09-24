@@ -1,0 +1,8 @@
+com\onebit\barbearia_fernandes\BarbeariaFernandesApplication.class
+com\onebit\barbearia_fernandes\model\TipoUsuario.class
+com\onebit\barbearia_fernandes\service\UserService.class
+com\onebit\barbearia_fernandes\controller\UserController.class
+com\onebit\barbearia_fernandes\controller\UserResponseDto.class
+com\onebit\barbearia_fernandes\controller\CreateUserDto.class
+com\onebit\barbearia_fernandes\repository\UsuarioRepository.class
+com\onebit\barbearia_fernandes\model\Usuario.class
