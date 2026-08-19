@@ -18,10 +18,11 @@ Desenvolver um CRUD simples para praticar conceitos fundamentais de programaçã
 
 ## 🛠️ Tecnologias utilizadas
 
-* Python
+* Java
 * Banco de dados (conforme implementação do projeto)
 * Git
 * GitHub
+* SpringBoot
 
 ## 📂 Estrutura do projeto
 
